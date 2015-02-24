@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.email         = "joshteeter@gmail.com"
   spec.summary       = "Resets you repo with hard head after a timeout"
   spec.description   = "This will reset your git repo after a set time"
-  spec.homepage      = "github.com/whatisinternet/HostileGit"
+  spec.homepage      = "https://github.com/whatisinternet/HostileGit"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
