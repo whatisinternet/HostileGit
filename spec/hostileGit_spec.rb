@@ -37,7 +37,7 @@ describe HostileGit do
 
    describe "reset!" do
      it "should reset the repo with a git reset --hard HEAD" do
-       expect(@hostile.reset!).to equal(0)
+       expect(@hostile.reset!).to include("HEAD")
      end
    end
 
