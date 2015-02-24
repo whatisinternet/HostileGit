@@ -42,14 +42,12 @@ describe HostileGit do
    end
 
    describe "check_and_reset" do
-     it "should reset the repo if the timeout has happened" do
-       pending("No easy test that I could think of. Open to pulls")
+     skip  "should reset the repo if the timeout has happened" do
      end
    end
 
    describe "start_being_hostile" do
-     it "should start being hostile" do
-       pending("Method never returns thus no test")
+     skip "should start being hostile" do
      end
    end
 end
