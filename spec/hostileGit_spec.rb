@@ -25,7 +25,7 @@ describe HostileGit do
 
    describe "initial_time" do
      it "should be the time the method was initalized" do
-       expect(@hostile.initial_time).to be_a(Date)
+       expect(@hostile.initial_time).to be_a(String)
      end
    end
 
