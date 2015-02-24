@@ -1,15 +1,16 @@
 require "HostileGit/version"
 require "git"
 require "listen"
+require "Date"
 
 module HostileGit
 
   class Hostility
-    attr_accessor :timeout, :last_commit, :git
+    attr_accessor :timeout, :initial_time, :git
 
     def initialize(timer = 10)
       self.timeout = timer
-      self.last_commit = timer
+      self.initial_time = Time.new.inspect
       self.git = Git.init
     end
 
@@ -29,7 +30,9 @@ module HostileGit
 
     def start_being_hostile
       listener = Listen.to(Dir.pwd) do |modified, added, removed|
-        check_and_reset
+        if (self.initial_time - Time.new.inspect) < (timeout * 3600)
+          check_and_reset
+        end
       end
       listener.start # not blocking
       sleep

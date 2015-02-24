@@ -1,6 +1,14 @@
 # HostileGit
 
-TODO: Write a gem description
+The whole point of this gem is to be hostile to you for not committing
+frequently.
+
+
+By default every 10 minutes that a commit hasn't occurred, this will run:
+
+```shell
+git reset --hard HEAD
+```
 
 ## Installation
 
@@ -20,7 +28,16 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Default
+
+```shell
+$ HostileGit
+```
+
+Custom timeout of 7 minutes
+```shell
+$ HostileGit 7
+```
 
 ## Contributing
 
