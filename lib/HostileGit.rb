@@ -21,11 +21,15 @@ module HostileGit
       self.git.reset_hard("HEAD")
     end
 
+    def check_and_reset
+      if !commited?
+        reset!
+      end
+    end
+
     def start_being_hostile
       listener = Listen.to(Dir.pwd) do |modified, added, removed|
-        if !commited?
-          reset!
-        end
+        check_and_reset
       end
       listener.start # not blocking
       sleep

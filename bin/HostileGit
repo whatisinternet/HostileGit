@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+
+require 'HostileGit'
+
+def main
+  HostileGit::Hostility.new(ARGV[0].to_i).start_being_hostile
+end
+
+main
