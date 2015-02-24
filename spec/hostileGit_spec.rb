@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe HostileGit do
+describe "HostileGit" do
 
   before (:each) do
     @hostile = HostileGit::Hostility.new()

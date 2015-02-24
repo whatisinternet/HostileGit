@@ -23,9 +23,7 @@ module HostileGit
     end
 
     def check_and_reset
-      if !commited?
-        reset!
-      end
+        reset! unless commited?
     end
 
     def initial_timeout
@@ -34,9 +32,7 @@ module HostileGit
 
     def start_being_hostile
       listener = Listen.to(Dir.pwd) do |modified, added, removed|
-        if initial_timeout
-         check_and_reset
-        end
+         check_and_reset if initial_timeout
       end
       listener.start # not blocking
       sleep
