@@ -1,7 +1,7 @@
 require "HostileGit/version"
 require "git"
 require "listen"
-require "Date"
+require "date"
 
 module HostileGit
 

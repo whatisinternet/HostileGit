@@ -23,9 +23,9 @@ describe HostileGit do
      end
    end
 
-   describe "last_commit" do
-     it "should have the time since the last commit" do
-       expect(@hostile.last_commit).to equal(10)
+   describe "initial_time" do
+     it "should be the time the method was initalized" do
+       expect(@hostile.initial_time).to be_a(Date)
      end
    end
 
