@@ -16,10 +16,10 @@ git reset --hard HEAD
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Gem install the gem:
 
-```ruby
-gem 'HostileGit'
+```shell
+$ gem instal HostileGit
 ```
 
 And then execute:
