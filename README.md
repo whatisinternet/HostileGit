@@ -1,3 +1,8 @@
+[![Build
+Status](https://travis-ci.org/whatisinternet/HostileGit.png?branch=master)](https://travis-ci.org/whatisinternet/HostileGit)
+
+[![Gem
+Version](https://badge.fury.io/rb/HostileGit.png)](http://badge.fury.io/rb/HostileGit)
 # HostileGit
 
 The whole point of this gem is to be hostile to you for not committing
