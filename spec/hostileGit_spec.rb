@@ -41,6 +41,12 @@ describe HostileGit do
      end
    end
 
+   describe "check_and_reset" do
+     it "should reset the repo if the timeout has happened" do
+       pending("No easy test that I could think of. Open to pulls")
+     end
+   end
+
    describe "start_being_hostile" do
      it "should start being hostile" do
        expect(@hostile.start_being_hostile).to be_nil
