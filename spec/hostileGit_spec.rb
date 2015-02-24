@@ -49,7 +49,7 @@ describe HostileGit do
 
    describe "start_being_hostile" do
      it "should start being hostile" do
-       expect(@hostile.start_being_hostile).to be_nil
+       pending("Method never returns thus no test")
      end
    end
 end
