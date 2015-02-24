@@ -16,6 +16,10 @@ module HostileGit
       self.git.log.since("#{self.timeout} minutes ago").count > 0
     end
 
+    def reset!
+      self.git.reset_hard("HEAD")
+    end
+
   end
 
 

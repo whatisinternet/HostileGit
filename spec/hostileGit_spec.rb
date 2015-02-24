@@ -30,11 +30,14 @@ describe HostileGit do
    end
 
    describe "comitted?" do
-     it "should tell us that the repo has not been commited to" do
-       expect(@hostile.commited?).to equal(false)
+     it "should tell us that the repo has been commited" do
+       expect(@hostile.commited?).to_not be_nil
      end
-     it "should tell us that the repo has been commited to" do
-       expect(@hostile.commited?).to equal(true)
+   end
+
+   describe "reset!" do
+     it "should reset the repo with a git reset --hard HEAD" do
+       expect(@hostile.reset!).to equal(0)
      end
    end
 
