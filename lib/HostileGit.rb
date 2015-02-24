@@ -10,7 +10,7 @@ module HostileGit
 
     def initialize(timer = 10)
       self.timeout = timer
-      self.initial_time = Time.new.inspect
+      self.initial_time = Time.now.to_i
       self.git = Git.init
     end
 
@@ -28,10 +28,14 @@ module HostileGit
       end
     end
 
+    def initial_timeout
+      (self.initial_time - Time.now.to_i) < (timeout * -3600)
+    end
+
     def start_being_hostile
       listener = Listen.to(Dir.pwd) do |modified, added, removed|
-        if (self.initial_time - Time.new.inspect) < (timeout * 3600)
-          check_and_reset
+        if initial_timeout
+         check_and_reset
         end
       end
       listener.start # not blocking

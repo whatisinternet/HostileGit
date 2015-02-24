@@ -41,6 +41,16 @@ describe HostileGit do
      end
    end
 
+   describe "initial_timeout" do
+     it "should not be timed out" do
+       expect(@hostile.initial_timeout).to be_falsy
+     end
+     it "should be timed out" do
+       @hostile.initial_time -= (10 * -3600)
+       expect(@hostile.initial_timeout).to be_truthy
+     end
+   end
+
    describe "check_and_reset" do
      skip  "should reset the repo if the timeout has happened" do
      end
