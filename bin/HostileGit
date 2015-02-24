@@ -3,6 +3,8 @@
 require 'HostileGit'
 
 def main
+  puts "\n HostileGit started: \n"
+  puts "Starting to watch your directories for changes \n ctrl+c to exit"
   HostileGit::Hostility.new(ARGV[0].to_i).start_being_hostile
 end
 
