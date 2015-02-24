@@ -20,6 +20,17 @@ module HostileGit
       self.git.reset_hard("HEAD")
     end
 
+    def start_being_hostile
+      listener = Listen.to(Dir.pwd) do |modified, added, removed|
+        if !commited?
+          reset!
+        end
+      end
+      listener.start # not blocking
+      sleep
+    end
+
+
   end
 
 end
