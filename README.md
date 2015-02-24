@@ -1,6 +1,6 @@
 [![Build
 Status](https://travis-ci.org/whatisinternet/HostileGit.png?branch=master)](https://travis-ci.org/whatisinternet/HostileGit) [![Gem
-Version](https://badge.fury.io/rb/HostileGit.png)](http://badge.fury.io/rb/HostileGit[![Code Climate](https://codeclimate.com/github/whatisinternet/HostileGit/badges/gpa.svg)](https://codeclimate.com/github/whatisinternet/HostileGit))[![Test Coverage](https://codeclimate.com/github/whatisinternet/HostileGit/badges/coverage.svg)](https://codeclimate.com/github/whatisinternet/HostileGit)
+Version](https://badge.fury.io/rb/HostileGit.png)](http://badge.fury.io/rb/HostileGit) [![Code Climate](https://codeclimate.com/github/whatisinternet/HostileGit/badges/gpa.svg)](https://codeclimate.com/github/whatisinternet/HostileGit) [![Test Coverage](https://codeclimate.com/github/whatisinternet/HostileGit/badges/coverage.svg)](https://codeclimate.com/github/whatisinternet/HostileGit)
 
 # HostileGit
 
