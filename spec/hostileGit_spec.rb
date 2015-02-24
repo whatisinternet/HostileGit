@@ -41,4 +41,11 @@ describe HostileGit do
      end
    end
 
+   describe "timed_out?" do
+     it "should check if the timer has run out" do
+       @hostile.timeout = @hostile.last_commit
+       expect(@hostile.timed_out?).to be_truthy
+     end
+   end
+
 end
