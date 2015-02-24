@@ -25,7 +25,7 @@ describe HostileGit do
 
    describe "initial_time" do
      it "should be the time the method was initalized" do
-       expect(@hostile.initial_time).to be_a(String)
+       expect(@hostile.initial_time).to be <= Time.now.to_i
      end
    end
 
@@ -46,18 +46,20 @@ describe HostileGit do
        expect(@hostile.initial_timeout).to be_falsy
      end
      it "should be timed out" do
-       @hostile.initial_time -= (10 * -3600)
+       @hostile.initial_time -= (30 * 3600)
        expect(@hostile.initial_timeout).to be_truthy
      end
    end
 
    describe "check_and_reset" do
-     skip  "should reset the repo if the timeout has happened" do
+     it "should respond to this method" do
+       expect(@hostile).to respond_to(:check_and_reset)
      end
    end
 
    describe "start_being_hostile" do
-     skip "should start being hostile" do
+     it "should respond to this method" do
+       expect(@hostile).to respond_to(:start_being_hostile)
      end
    end
 end
