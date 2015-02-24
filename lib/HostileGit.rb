@@ -1,5 +1,6 @@
 require "HostileGit/version"
 require "git"
+require "listen"
 
 module HostileGit
 
