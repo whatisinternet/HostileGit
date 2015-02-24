@@ -22,5 +22,4 @@ module HostileGit
 
   end
 
-
 end
