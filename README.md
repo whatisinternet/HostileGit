@@ -18,8 +18,8 @@ git reset --hard HEAD
 
 Gem install the gem:
 
-```shell
-$ gem instal HostileGit
+```ruby
+$ gem 'HostileGit'
 ```
 
 And then execute:
@@ -45,7 +45,7 @@ $ HostileGit 7
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/HostileGit/fork )
+1. Fork it ( https://github.com/whatisinternet/HostileGit/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
